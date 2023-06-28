@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/query.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div>
+      <section class="back-img"></section>
+      <div class="cards">
+        <div>
+          <section>
+            <img
+              src="./images/bg-card-front.png"
+              alt="front-card"
+              class="front-card"
+            />
+          </section>
+
+          <section class="front-details">
+            <div>
+              <img src="./images/card-logo.svg" alt="card-logo" class="logo" />
+            </div>
+
+            <p class="inputNumber">0000 0000 0000 0000</p>
+            <div class="names">
+              <p class="inputName">JANE APPLESEED</p>
+              <p class="inputDate">00/00</p>
+            </div>
+          </section>
+        </div>
+
+        <div>
+          <section>
+            <img
+              src="./images/bg-card-back.png"
+              alt="back-card"
+              class="back-card"
+            />
+          </section>
+          <section class="back-details">
+            <p class="inputCvc">ooo</p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="details">
+        <form action="" class="form-field">
+          <label for="CardholderName">CARDHOLDER NAME</label>
+          <input
+            type="text"
+            placeholder="e.g Jane Appleseed"
+            class="inputs inputval"
+            required
+          />
+          <p class="error hidden">can't be blank</p>
+
+          <label for="CardNumber">CARD NUMBER</label>
+          <input
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            class="inputs inputval"
+          />
+          <p class="error hidden">can't be blank</p>
+
+          <div class="flex">
+            <section class="flex2">
+              <label for="ExpDate">Exp. Date (MM/YY)</label>
+              <label for="cvc" class="cvc">cvc</label>
+            </section>
+
+            <section class="flex3">
+              <input type="number" placeholder="MM" class="inputs inputval" />
+              <input type="number" placeholder="YY" class="inputs inputval" />
+              <input
+                type="number"
+                placeholder="e.g 123"
+                class="inputs inputval lastin"
+              />
+
+              <section class="flex2">
+                <p class="error hidden">can't be blank</p>
+                <p class="error cvc2 hidden">can't be blank</p>
+              </section>
+            </section>
+          </div>
+          <button class="confirm">Confirm</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Completed state start Than k you! We've added your card details Continue -->
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

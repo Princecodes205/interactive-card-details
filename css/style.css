@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
+}
+body {
+  display: flex;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+main {
+  display: flex;
+  background-color: var(--white);
+}
+.back-img {
+  background-image: url(../images/bg-main-desktop.png);
+  height: 100vh;
+  width: 25rem;
+  position: absolute;
+  margin-right: 0;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--white);
+  height: auto;
+  width: auto;
+  /* margin: 0 auto; */
+}
+.front-card,
+.back-card {
+  width: 22rem;
+}
+.front-card {
+  top: 6rem;
+  left: 10rem;
+  position: relative;
+}
+.front-details {
+  position: absolute;
+  font-size: 19px;
+  font-weight: lighter;
+  word-spacing: 5px;
+  left: 13rem;
+  top: 13rem;
+}
+.logo {
+  position: absolute;
+  top: -6rem;
+  margin-top: 0;
+}
+.names {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  position: relative;
+  width: 16rem;
+  font-size: 10px;
+  word-spacing: 2px;
+  top: 1rem;
+}
+.back-card {
+  top: 20rem;
+  left: 15rem;
+  position: absolute;
+}
+.back-details {
+  position: absolute;
+  font-size: 19px;
+  font-weight: lighter;
+  left: 32rem;
+  top: 25rem;
+  color: var(--white);
+  z-index: 100;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+}
+.form-field {
+  left: 35rem;
+  top: 6rem;
+  font-size: 15px;
+  margin: 10px;
+  font-weight: bold;
+  position: relative;
+}
+.form-field label {
+  color: var(--Very-dark-violet);
+  font-size: 12px;
+}
+.form-field input {
+  height: 35px;
+  width: 20rem;
+  padding-left: 15px;
+  border: 1px solid var(--Light-grayish-violet);
+  border-radius: 5px;
+  color: var(--Very-dark-violet);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.form-field ::placeholder {
+  color: var(--Light-grayish-violet);
+  font-size: 15px;
+}
+.flex input {
+  width: 4rem;
+  margin-right: 8px;
+}
+.flex3 :nth-child(3) {
+  width: 10.4rem;
+  margin-left: 1px;
+  margin-right: 0;
+}
+.flex2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  word-spacing: 2px;
+}
+.cvc {
+  right: 8.6rem;
+  position: relative;
+}
+button {
+  background-color: var(--Very-dark-violet);
+  color: var(--white);
+  width: 20rem;
+  height: 3rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: bold;
+  letter-spacing: 2px;
+}
+.details .error {
+  color: red;
+  font-size: 10px;
+  font-weight: lighter;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.details .cvc2 {
+  margin-right: 6rem;
+}
+.details .inputs {
+  border: 1px solid red;
+}
+.hidden {
+  display: none;
+}
+.attribution {
+  top: 43rem;
+  bottom: 2rem;
+  position: absolute;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

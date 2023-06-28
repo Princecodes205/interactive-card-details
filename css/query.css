@@ -1,0 +1,72 @@
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .back-img {
+    background-image: url(../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 15rem;
+    min-width: 100vw;
+  }
+
+  .cards img {
+    width: 19rem;
+  }
+
+  .cards .front-card {
+    left: -1rem;
+    top: 8rem;
+    z-index: 100;
+  }
+
+  .cards .front-details {
+    z-index: 200;
+    font-size: 15px;
+    font-weight: lighter;
+    word-spacing: 5px;
+    left: 4rem;
+    top: 14rem;
+  }
+
+  .cards .logo {
+    width: 60px;
+    top: -4rem;
+    z-index: 200;
+  }
+
+  .cards .names p {
+    z-index: 200;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    /* position: relative; */
+    width: 30rem;
+    font-size: 11px;
+    word-spacing: 5px;
+    /* top: 1rem; */
+    left: -2rem;
+  }
+
+  .cards .back-card {
+    top: 2rem;
+    left: 4rem;
+  }
+
+  .back-details p {
+    position: absolute;
+    font-size: 19px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    left: -14rem;
+    top: -18.7rem;
+    z-index: 100;
+  }
+  .details .form-field {
+    position: absolute;
+    top: 20rem;
+    left: 1rem;
+    width: 20rem;
+  }
+}
