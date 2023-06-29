@@ -132,7 +132,6 @@
     align-items: baseline;
     top: 4rem;
     justify-content: space-between;
-    /* background-color: blue; */
   }
   main .flex3 {
     position: relative;
@@ -200,7 +199,7 @@
   .cards .back-details {
     font-size: 15px;
     left: 23rem;
-    top: 5.5rem;
+    top: 5.7rem;
   }
   main .details {
     left: 16rem;

@@ -29,21 +29,21 @@ const errorCheck = function () {
         elr.classList.add("hidden");
       }
 
-      if (i === 1 && el.value.length > 19 && ier === i) {
+      if (i === 1 && el.value.length > 16 && ier === i) {
         el.classList.add("inputs");
         elr.classList.remove("hidden");
         elr.textContent = "Invalid format too long";
-        allConditionsMet = false; // Set to false if any condition is not met
+        allConditionsMet = false;
       } else if (
         i === 1 &&
-        el.value.length < 19 &&
+        el.value.length < 16 &&
         el.value.length > 1 &&
         ier === i
       ) {
         el.classList.add("inputs");
         elr.classList.remove("hidden");
         elr.textContent = "Invalid format too short";
-        allConditionsMet = false; // Set to false if any condition is not met
+        allConditionsMet = false;
       }
 
       const hasAlphabets = /[a-zA-Z]/.test(inputFields[1].value);
@@ -51,48 +51,50 @@ const errorCheck = function () {
         el.classList.add("inputs");
         elr.classList.remove("hidden");
         elr.textContent = "Wrong format, Numbers Only";
-        allConditionsMet = false; // Set to false if any condition is not met
+        allConditionsMet = false;
       }
 
       if (el.value.length > 2 && i === 2 && ier === i) {
         el.classList.add("inputs");
         elr.classList.remove("hidden");
         elr.textContent = "too long";
-        allConditionsMet = false; // Set to false if any condition is not met
+        allConditionsMet = false;
       }
 
       if (el.value.length > 2 && i === 3 && ier === i) {
         el.classList.add("inputs");
         elr.classList.remove("hidden");
         elr.textContent = "too long";
-        allConditionsMet = false; // Set to false if any condition is not met
+        allConditionsMet = false;
       }
     });
   });
 
   if (lastInput.value === "") {
     lastInput.classList.add("inputs");
-    allConditionsMet = false; // Set to false if any condition is not met
+    allConditionsMet = false;
   } else if (lastInput.value.length > 3) {
     lastInput.classList.add("inputs");
     errin.textContent = "too long";
-    allConditionsMet = false; // Set to false if any condition is not met
+    allConditionsMet = false;
   } else {
     lastInput.classList.remove("inputs");
     errin.textContent = "";
   }
 
-  return allConditionsMet; // Return the overall result of conditions check
+  return allConditionsMet;
 };
 
 const displayResults = function () {
   if (errorCheck()) {
     displayName.textContent = inputFields[0].value;
-    displayNumber.textContent = inputFields[1].value;
+    const inputValue = inputFields[1].value.trim();
+    const formattedValue = inputValue.replace(/(\d{4})(?=\d)/g, "$1 ");
+    displayNumber.textContent = formattedValue;
     displayDate.textContent = `${inputFields[2].value}/${inputFields[3].value}`;
     displayCvc.textContent = inputFields[4].value;
     finishMsg.classList.remove("hide");
-  } else if (inputFields.values === "") {
+  } else if (inputFields.every((el) => el.value === "")) {
     finishMsg.classList.add("hide");
   } else {
     displayName.textContent = inputFields[0].value || "JANE APPLESEED";
@@ -114,7 +116,11 @@ finish.addEventListener("click", function (e) {
   e.preventDefault();
   finishMsg.classList.add("hide");
   inputFields.forEach((el) => {
-    el.value === "";
+    el.value = "";
     el.blur();
   });
+  displayName.textContent = "JANE APPLESEED";
+  displayNumber.textContent = "0000 0000 0000 0000";
+  displayDate.textContent = "00/00";
+  displayCvc.textContent = "000";
 });
