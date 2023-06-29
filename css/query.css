@@ -1,72 +1,186 @@
-@media only screen and (min-width: 300px) and (max-width: 500px) {
-  body {
-    display: flex;
-    flex-direction: column;
+@media only screen and (min-width: 700px) and (max-width: 1050px) {
+  div .back-img {
+    width: 17rem;
   }
-  .back-img {
-    background-image: url(../images/bg-main-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 15rem;
-    min-width: 100vw;
+  div .cards {
+    display: block;
   }
-
-  .cards img {
-    width: 19rem;
+  div .cards .front-card,
+  div .cards .back-card {
+    width: 17rem;
+    left: 5rem;
   }
-
-  .cards .front-card {
-    left: -1rem;
-    top: 8rem;
-    z-index: 100;
+  div .cards .back-card {
+    left: 8rem;
+    top: 18rem;
   }
-
   .cards .front-details {
-    z-index: 200;
+    font-size: 10px;
+    left: 5rem;
+    top: 11.4rem;
+  }
+  .front-details .logo {
+    width: 4rem;
+    top: -5rem;
+    left: 1rem;
+  }
+  .front-details .inputNumber {
+    margin-left: 2rem;
     font-size: 15px;
-    font-weight: lighter;
-    word-spacing: 5px;
-    left: 4rem;
-    top: 14rem;
   }
-
-  .cards .logo {
-    width: 60px;
-    top: -4rem;
-    z-index: 200;
+  .front-details .inputName {
+    margin-left: 2rem;
   }
-
-  .cards .names p {
-    z-index: 200;
+  .front-details .inputDate {
+    margin-right: 2rem;
+  }
+  .cards .back-details {
+    font-size: 15px;
+    left: 21rem;
+    top: 21.9rem;
+  }
+  main .details {
+    left: 35rem;
+    top: 8rem;
+    margin-left: 2rem;
+  }
+  main .details label {
+    font-size: 10px;
+  }
+  main .form-field {
+    width: 20rem;
+  }
+  main .details input {
+    width: 15rem;
+    height: 2rem;
+  }
+  main .flex3 input {
+    width: 3.8rem;
+  }
+  main .flex3 {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    /* position: relative; */
-    width: 30rem;
-    font-size: 11px;
-    word-spacing: 5px;
-    /* top: 1rem; */
-    left: -2rem;
+  }
+  main .details .confirm {
+    width: 15rem;
   }
 
-  .cards .back-card {
-    top: 2rem;
-    left: 4rem;
+  main .details .lastin {
+    width: 6rem;
   }
+}
 
-  .back-details p {
-    position: absolute;
-    font-size: 19px;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    left: -14rem;
-    top: -18.7rem;
+/* @media only screen and (min-width: 300px) and (max-width: 700px) {
+} */
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  div .back-img {
+    background-image: url(../images/bg-main-mobile.png);
+    overflow: hidden;
+    width: 100vw;
+    height: 13rem;
+  }
+  div .cards {
+    display: block;
+  }
+  div .cards .front-card,
+  div .cards .back-card {
+    width: 15rem;
+  }
+  div .cards .front-card {
+    top: 7rem;
+    left: 6rem;
     z-index: 100;
   }
-  .details .form-field {
-    position: absolute;
-    top: 20rem;
-    left: 1rem;
+  div .cards .back-card {
+    top: 2.4rem;
+    left: 9rem;
+  }
+  div .front-details {
+    z-index: 200;
+    font-size: 12px;
+    top: 12rem;
+    left: 5rem;
+  }
+  .front-details .logo {
+    width: 3rem;
+    top: -4rem;
+    left: 2rem;
+  }
+  .front-details .inputNumber {
+    margin-left: 3rem;
+  }
+  .front-details .inputName {
+    margin-left: 2rem;
+  }
+  .front-details .inputDate {
+    margin-right: 2rem;
+  }
+
+  .cards .back-details {
+    font-size: 15px;
+    left: 20rem;
+    top: 5.5rem;
+  }
+  main .details {
+    left: 14rem;
+    top: 17rem;
+    margin-left: 2rem;
+  }
+  main .details label {
+    font-size: 10px;
+  }
+  main .form-field {
     width: 20rem;
+  }
+  main .details input {
+    width: 15rem;
+    height: 2rem;
+  }
+  main .flex3 input {
+    width: 3.8rem;
+  }
+  main .flex3 {
+    display: flex;
+  }
+  main .details .confirm {
+    width: 15rem;
+  }
+
+  main .details .lastin {
+    width: 6rem;
+  }
+}
+
+@media only screen and (min-width: 290px) and (max-width: 380px) {
+  div .back-img {
+    width: 100vw;
+    background-repeat: no-repeat;
+  }
+  div .cards .front-card {
+    top: 7rem;
+    left: 3rem;
+    z-index: 100;
+  }
+  div .cards .back-card {
+    top: 2.4rem;
+    left: 5rem;
+  }
+  main .details {
+    left: 10rem;
+    top: 17rem;
+    margin-left: 2rem;
+  }
+  .cards .back-details {
+    left: 16rem;
+    top: 5.6rem;
+  }
+  div .front-details {
+    left: 3rem;
+  }
+  .front-details .logo {
+    left: 1rem;
+  }
+  .front-details .inputNumber {
+    margin-left: 3rem;
   }
 }

@@ -15,6 +15,10 @@
 body {
   display: flex;
   font-family: "Plus Jakarta Sans", sans-serif;
+  /* border: 2px solid green; */
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 main {
   display: flex;
@@ -22,21 +26,20 @@ main {
 }
 .back-img {
   background-image: url(../images/bg-main-desktop.png);
+  overflow-x: hidden;
   height: 100vh;
   width: 25rem;
   position: absolute;
-  margin-right: 0;
 }
 .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
   color: var(--white);
   height: auto;
   width: auto;
-  /* margin: 0 auto; */
 }
 .front-card,
 .back-card {
@@ -85,15 +88,20 @@ main {
   z-index: 100;
 }
 .details {
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 10rem;
+  width: 0rem;
+  margin-right: 0;
+  background-color: white;
+  left: 55rem;
+  top: 9rem;
 }
 .form-field {
-  left: 35rem;
-  top: 6rem;
+  /* left: 35rem; */
+  /* top: 6rem; */
   font-size: 15px;
   margin: 10px;
   font-weight: bold;
@@ -170,6 +178,7 @@ button {
   position: absolute;
   font-size: 11px;
   text-align: center;
+  display: none;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
