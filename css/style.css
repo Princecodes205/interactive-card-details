@@ -145,6 +145,21 @@ main {
   right: 8.6rem;
   position: relative;
 }
+main .flex4 {
+  display: flex;
+  position: absolute;
+  align-items: baseline;
+  top: 4rem;
+  justify-content: space-between;
+  /* background-color: blue; */
+}
+main .flex3 {
+  position: relative;
+}
+main .flex3 .cvc2 {
+  left: 5.5rem;
+  position: relative;
+}
 button {
   background-color: var(--Very-dark-violet);
   color: var(--white);
@@ -172,13 +187,39 @@ button {
 .hidden {
   display: none;
 }
+main .hide {
+  display: none;
+}
+.congrats {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35rem;
+  height: 30rem;
+  margin-right: 0;
+  background-color: var(--white);
+  left: 40rem;
+  top: 3rem;
+  z-index: 300;
+}
+.congrats h1 {
+  margin-bottom: 1rem;
+}
+.congrats img {
+  margin: 2rem;
+}
+.congrats p {
+  margin-bottom: 1rem;
+}
+
 .attribution {
-  top: 43rem;
+  top: 40rem;
+  left: 30rem;
   bottom: 2rem;
   position: absolute;
   font-size: 11px;
-  text-align: center;
-  display: none;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

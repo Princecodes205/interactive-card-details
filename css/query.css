@@ -1,3 +1,55 @@
+@media only screen and (min-width: 1500px) and (max-width: 2500px) {
+  div .cards .front-card {
+    top: 20rem;
+  }
+  div .back-img {
+    width: 17rem;
+    background-repeat: repeat;
+  }
+  div .cards .back-card {
+    left: 8rem;
+    top: 35rem;
+  }
+  .cards .back-details {
+    top: 40rem;
+    left: 25rem;
+  }
+  .cards .front-details {
+    font-size: 10px;
+    left: 11rem;
+    top: 28rem;
+  }
+  main .details {
+    top: 20rem;
+    left: 60rem;
+  }
+  main .flex4 {
+    display: flex;
+    position: absolute;
+    align-items: baseline;
+    top: 4rem;
+    justify-content: space-between;
+    /* background-color: blue; */
+  }
+  main .flex3 {
+    position: relative;
+  }
+  main .flex3 .cvc2 {
+    left: 5.5rem;
+    position: relative;
+  }
+  body .attribution {
+    top: 50rem;
+    left: 40rem;
+  }
+  main .congrats {
+    left: rem;
+    top: 16rem;
+    width: 35rem;
+    height: 25rem;
+    z-index: 1;
+  }
+}
 @media only screen and (min-width: 700px) and (max-width: 1050px) {
   div .back-img {
     width: 17rem;
@@ -10,14 +62,17 @@
     width: 17rem;
     left: 5rem;
   }
+  div .cards .front-card {
+    top: 10rem;
+  }
   div .cards .back-card {
     left: 8rem;
-    top: 18rem;
+    top: 20rem;
   }
   .cards .front-details {
     font-size: 10px;
     left: 5rem;
-    top: 11.4rem;
+    top: 16rem;
   }
   .front-details .logo {
     width: 4rem;
@@ -37,11 +92,11 @@
   .cards .back-details {
     font-size: 15px;
     left: 21rem;
-    top: 21.9rem;
+    top: 24rem;
   }
   main .details {
     left: 35rem;
-    top: 8rem;
+    top: 10rem;
     margin-left: 2rem;
   }
   main .details label {
@@ -67,10 +122,36 @@
   main .details .lastin {
     width: 6rem;
   }
+  body .attribution {
+    top: 35rem;
+    left: 20rem;
+  }
+  main .flex4 {
+    display: flex;
+    position: absolute;
+    align-items: baseline;
+    top: 4rem;
+    justify-content: space-between;
+    /* background-color: blue; */
+  }
+  main .flex3 {
+    position: relative;
+  }
+  .flex2 .cvc {
+    left: -5rem;
+  }
+  main .flex3 .cvc2 {
+    left: 4.5rem;
+    position: relative;
+  }
+  main .congrats {
+    left: 28rem;
+    top: 5rem;
+    width: 20rem;
+    height: 25rem;
+    z-index: 1;
+  }
 }
-
-/* @media only screen and (min-width: 300px) and (max-width: 700px) {
-} */
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
   div .back-img {
@@ -88,18 +169,18 @@
   }
   div .cards .front-card {
     top: 7rem;
-    left: 6rem;
+    left: 10rem;
     z-index: 100;
   }
   div .cards .back-card {
     top: 2.4rem;
-    left: 9rem;
+    left: 12rem;
   }
   div .front-details {
     z-index: 200;
     font-size: 12px;
     top: 12rem;
-    left: 5rem;
+    left: 9rem;
   }
   .front-details .logo {
     width: 3rem;
@@ -118,12 +199,12 @@
 
   .cards .back-details {
     font-size: 15px;
-    left: 20rem;
+    left: 23rem;
     top: 5.5rem;
   }
   main .details {
-    left: 14rem;
-    top: 17rem;
+    left: 16rem;
+    top: 20rem;
     margin-left: 2rem;
   }
   main .details label {
@@ -149,12 +230,43 @@
   main .details .lastin {
     width: 6rem;
   }
+  main .flex4 {
+    display: flex;
+    position: absolute;
+    align-items: baseline;
+    top: 4rem;
+    justify-content: space-between;
+    /* background-color: blue; */
+  }
+  main .flex3 {
+    position: relative;
+  }
+  main .flex3 .cvc2 {
+    left: 4.5rem;
+    position: relative;
+  }
+  .flex2 .cvc {
+    left: -5rem;
+  }
+  main .congrats {
+    left: 0rem;
+    top: 16rem;
+    width: 100vw;
+    height: 25rem;
+    z-index: 1;
+  }
+  body .attribution {
+    top: 43rem;
+    left: 10rem;
+    bottom: 2rem;
+    position: absolute;
+    font-size: 11px;
+  }
 }
 
-@media only screen and (min-width: 290px) and (max-width: 380px) {
+@media only screen and (min-width: 290px) and (max-width: 520px) {
   div .back-img {
     width: 100vw;
-    background-repeat: no-repeat;
   }
   div .cards .front-card {
     top: 7rem;
@@ -164,11 +276,6 @@
   div .cards .back-card {
     top: 2.4rem;
     left: 5rem;
-  }
-  main .details {
-    left: 10rem;
-    top: 17rem;
-    margin-left: 2rem;
   }
   .cards .back-details {
     left: 16rem;
@@ -182,5 +289,45 @@
   }
   .front-details .inputNumber {
     margin-left: 3rem;
+  }
+  main .flex4 {
+    display: flex;
+    position: absolute;
+    align-items: baseline;
+    top: 4rem;
+    justify-content: space-between;
+    /* background-color: blue; */
+  }
+  main .flex3 {
+    position: relative;
+  }
+  .flex2 .cvc {
+    left: -5rem;
+  }
+  main .details {
+    left: 9.5rem;
+    top: 20rem;
+    margin-left: 2rem;
+  }
+  main .flex2 .cvc {
+    right: 8.6rem;
+    position: relative;
+  }
+  button {
+    margin-top: 2rem;
+  }
+  main .congrats {
+    left: 0rem;
+    top: 16rem;
+    width: 100vw;
+    height: 25rem;
+    z-index: 1;
+  }
+  body .attribution {
+    top: 43rem;
+    left: 3rem;
+    bottom: 2rem;
+    position: absolute;
+    font-size: 11px;
   }
 }
