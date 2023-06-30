@@ -61,7 +61,7 @@ const errorCheck = function () {
         allConditionsMet = false;
       }
 
-      if (el.value.length > 2 && i === 3 && ier === i) {
+      if (el.value.length > 2 && i === 3 && ier === 2) {
         el.classList.add("inputs");
         elr.classList.remove("hidden");
         elr.textContent = "too long";
@@ -76,6 +76,10 @@ const errorCheck = function () {
   } else if (lastInput.value.length > 3) {
     lastInput.classList.add("inputs");
     errin.textContent = "too long";
+    allConditionsMet = false;
+  } else if (lastInput.value.length < 3) {
+    lastInput.classList.add("inputs");
+    errin.textContent = "too short";
     allConditionsMet = false;
   } else {
     lastInput.classList.remove("inputs");

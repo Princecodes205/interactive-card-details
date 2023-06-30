@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1500px) and (max-width: 2500px) {
   div .cards .front-card {
-    top: 20rem;
+    top: 15rem;
   }
   div .back-img {
     width: 17rem;
@@ -8,19 +8,19 @@
   }
   div .cards .back-card {
     left: 8rem;
-    top: 35rem;
+    top: 30rem;
   }
   .cards .back-details {
-    top: 40rem;
+    top: 35rem;
     left: 25rem;
   }
   .cards .front-details {
     font-size: 10px;
     left: 11rem;
-    top: 28rem;
+    top: 22rem;
   }
   main .details {
-    top: 20rem;
+    top: 15rem;
     left: 60rem;
   }
   main .flex4 {
@@ -29,7 +29,6 @@
     align-items: baseline;
     top: 4rem;
     justify-content: space-between;
-    /* background-color: blue; */
   }
   main .flex3 {
     position: relative;
@@ -44,7 +43,7 @@
   }
   main .congrats {
     left: rem;
-    top: 16rem;
+    top: 15rem;
     width: 35rem;
     height: 25rem;
     z-index: 1;
